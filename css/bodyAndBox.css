@@ -1,11 +1,7 @@
-body
-{
-  background-image:url(image/bg.png);
-}
-
 #content
 {
 text-align: center;
+background-image:url(../background.png);
 }
 
 #clockparagraph
