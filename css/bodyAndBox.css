@@ -1,4 +1,4 @@
-#content
+body
 {
 text-align: center;
 background-image:url(../background.png);
@@ -27,7 +27,7 @@ bottom:0px;
 
 .text
 {
-color:#00AAFF;
+color:black;
 font-size:0.5em;
 }
 
