@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta content="en-us" http-equiv="Content-Language" /> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.9" /> 
+  <title id="title">ypm_design</title>
+  <link href="css/bodyAndBox.css" rel="stylesheet"/>
+  <script type="text/javascript" src="js/1.js"></script>
+ </head> 
+ <body> 
+  <div id="content"> 
+
+   <p>当前时间为<span id="T" style="color:#38D41D;"></span></p>
+   <script type="text/Javascript" src="js/time.js"></script>
+   
+   <div class="search_part">
+   <link href="css/searchBox.css" rel="stylesheet"/>
+    <form id="search_form" onsubmit="return search()" class="search_bar"> 
+     <input type="submit" id="search_submit" value="OK" /> 
+     <span><i id="clear" onclick="clear_seach()"></i> 
+      <div class="si"> 
+       <input class="search" type="text" onkeyup="get_suggest()" onfocus="get_suggest()" onpaste="get_suggest()" autocomplete="off" id="search_input" placeholder="@ypm请输入搜索关键字" /> 
+      </div>
+     </span> 
+     <div id="suggest" style="display:none"> 
+      <ul id="suglist"></ul> 
+      <div class="close" onclick="close_sug()">|收起</div> 
+     </div> 
+    </form>
+   </div> 
+   
+   <br /> 
+   
+   <div class="box">
+    <a class="link" herf=""></a>
+    <p class="text">#div.a.p.img</p>
+    <p><img class="image" src="image/xm.JPEG "/></p>
+   </div>
+   <div class="box"> 
+    <a class="link" href="x:sc"></a> 
+    <p><img class="image" src="image/jb.JPEG" /></p> 
+    <p class="text">脚本</p> 
+   </div> 
+   <div class="box"> 
+    <a class="link" href="x:sd?path=//AppProjects/"></a> 
+    <p><img class="image" src="image/WorkSpace.JPEG" /></p> 
+    <p class="text">WorkSpace</p> 
+   </div> 
+   <div class="box"> 
+    <a class="link" href="https://go.uc.cn/page/hao/ucmeng2?source="></a> 
+    <p><img class="image" src="image/ucdh.JPEG" /></p> 
+    <p class="text">UC网址导航</p> 
+   </div> 
+   <div class="box"> 
+    <a class="link"< href="x:bm?sort=default"></a> 
+    <p><img class="image" src="image/sq.JPEG" /></p> 
+    <p class="text">书签</p> 
+   </div> 
+
+   <p style="font-size:16px;">#font ypm lgs 1314 ok</p>
+   
+  </div>  
+ </body>
+</html>
