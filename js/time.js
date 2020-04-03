@@ -7,5 +7,5 @@ setInterval(function()
     s=time.getSeconds();
     xs=time.getMilliseconds();
     var c=document.getElementById("T");
-    c.innerHTML=h+":"+m+":"+s+":"+xs;
-},0);
+    c.innerHTML=h+":"+m+":"+s;
+},1000);
