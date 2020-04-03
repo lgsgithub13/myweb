@@ -1,11 +1,10 @@
 body
 {
-color:white;
+color:#1d4f16;
 text-align: center;
+font-weight:bolder;
 background-image:url(../background.png);
-background-attachment:fixed;
-background-position:bottom;
-background-repeat:no-repeat;
+background-size:100%;
 }
 
 #clockparagraph
