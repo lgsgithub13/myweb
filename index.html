@@ -7,9 +7,10 @@
   <title id="title">ypm_design</title>
   <link href="css/bodyAndBox.css" rel="stylesheet"/>
   <script type="text/javascript" src="js/1.js"></script>
+  <script type="text/javascript" src="js/addShuqian.js"></script>
  </head> 
  <body> 
-  <div> 
+  <div id="body"> 
 
    <p id="clockparagraph">当前时间为:
 	<span style="color:red;">
@@ -20,7 +21,7 @@
 	 <span id="S"></span>
 	</span>
    </p>
-   <script type="text/Javascript" src="js/time.js"></script>
+   <script type="text/javaScript" src="js/time.js"></script>
    
    <div class="search_part">
    <link href="css/searchBox.css" rel="stylesheet"/>
@@ -65,14 +66,12 @@
     <p><img class="image" src="image/sq.png" /></p> 
     <p class="text">书签</p> 
    </div> 
-   <div class="box">
-	<a class="link" onclick="alert('开发中...')"></a>
+   <div class="box" id="add">
+	<a class="link" onclick="addShuQian()"></a>
 	<p><img class="image" src="image/add.png "/></p>
 	<p class="text">添加新标签</p>
    </div>
-   
-   <p style="font-size:16px;">千里之行，始于足下！</p>
-   
-  </div>  
+  </div>
+  <p style="font-size:16px;">千里之行，始于足下！</p>
  </body>
 </html>
