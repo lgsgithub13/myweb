@@ -55,8 +55,8 @@ function addOk()
 }
 function loadUserWeb()
 {
-	//alert("页面加载完毕");
-	
+if(localStorage.getItem!=null)
+{
 	//创建标签
 var div=document.createElement("div");
 
@@ -64,7 +64,7 @@ var bodydiv=document.getElementById("bodydiv");
 	//把标签添加到body中
 bodydiv.appendChild(div);
 	//为标签添加属性、样式
-div.setAttitute("className","box");
+div.setAttribute("className","box");
 div.style="position:relative;display:inline-block;margin:0.5em;";
 	//在标签内添加a、img、p内容
 var a=document.createElement("a");
@@ -76,13 +76,14 @@ div.appendChild(p_include_img);
 div.appendChild(p);
 p_include_img.appendChild(img);
 	//为子标签添加属性、样式
-a.setAttitute("className","link");
-a.setAttitute("href",window.localStorage.getItem("hrefValue"));
+a.setAttribute("className","link");
+a.setAttribute("href",window.localStorage.getItem("hrefValue"));
 a.style="width:100%;height:100%;position:absolute;right:0px;bottom:0px;";
-img.setAttitute("className","image");
-img.setAttitute("src",window.localStorage.getItem("srcValue"));
+img.setAttribute("className","image");
+img.setAttribute("src",window.localStorage.getItem("srcValue"));
 img.style="width:3em;height:3em;";
 p.innerHTML=window.localStorage.getItem("linkValue");
-p.setAttitute("className","text");
+p.setAttribute("className","text");
 p.style="font-size:1em;";
-};
+}
+}
