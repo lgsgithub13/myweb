@@ -2,7 +2,25 @@ function addShuQian()
 {
 	var addDialog=document.getElementById("addDialog");
 	addDialog.style="display:block;";
-	/*
+}
+//关闭添加书签对话框
+function closeAddDialog()
+{
+	var addDialog=document.getElementById("addDialog");
+	addDialog.style="display:none;";
+}
+//确定
+function addOk()
+{
+	var inputUrl=document.getElementById("inputUrl");
+	var inputName=document.getElementById("inputName");
+	var inputImgSrc=document.getElementById("inputImgSrc");
+	//
+	var hrefValue=inputUrl.value;
+	var linkName=inputName.value;
+	var srcValue=inputImgSrc.value;
+	//
+	var addDialog=document.getElementById("addDialog");
 	//创建标签并添加到body中
 	var body=document.getElementById("body");
 	var newTag=document.createElement("div");
@@ -19,20 +37,15 @@ function addShuQian()
 	newTag.appendChild(p);
 	//为子标签添加属性和样
 	p_include_img.appendChild(img);
-	p.innerHTML="开发中";
+	p.innerHTML=linkName;
 	p.setAttribute("className","text");
 	p.style="font-size:1em;";
 	img.setAttribute("className","image");
-	img.setAttribute("src","../test.png");
+	img.setAttribute("src",srcValue);
 	img.style="width:3em;height:3em;";
 	a.setAttribute("className","link");
-	a.setAttribute("href","x:sc");
+	a.setAttribute("href",inputUrl);
 	a.style="width:100%;height:100%;position:absolute;right:0px;bottom:0px;";
-	*/
-}
-//关闭添加书签对话框
-function closeAddDialog()
-{
-	var addDialog=document.getElementById("addDialog");
+	//
 	addDialog.style="display:none;";
 }
