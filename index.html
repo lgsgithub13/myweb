@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.9" /> 
   <title id="title">ypm_design</title>
   <link href="css/bodyAndBox.css" rel="stylesheet"/>
+  <link href="css/addDialog.css" rel="stylesheet"/>
   <script type="text/javascript" src="js/1.js"></script>
   <script type="text/javascript" src="js/addShuqian.js"></script>
   <script type="text/javascript" src="js/userStorage.js"></script>
@@ -71,6 +72,18 @@
 	<a class="link" onclick="addShuQian()"></a>
 	<p><img class="image" src="image/add.png "/></p>
 	<p class="text">添加新标签</p>
+   </div>
+   <div id="addDialog">
+	 <span style="font-size:24px;background:#b0b0b0;padding:7px 137px;">
+	   添加书签
+	 </span>
+	 <div style="text-align:left;line-height:35px;">
+	   <p>请输入网址:<input/></p>
+	   <p>请输入名称:<input/></p>
+	   <p>请输入图片路径:<input/></p>
+	 </div>
+	 <button style="position:absolute;left:70px;bottom:0px;"onclick="closeAddDialog()">取消</button>
+	 <button style="position:absolute;right:70px;bottom:0px;">确定</button>
    </div>
   </div>
   

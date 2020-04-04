@@ -1,5 +1,8 @@
 function addShuQian()
 {
+	var addDialog=document.getElementById("addDialog");
+	addDialog.style="display:block;";
+	/*
 	//创建标签并添加到body中
 	var body=document.getElementById("body");
 	var newTag=document.createElement("div");
@@ -25,4 +28,11 @@ function addShuQian()
 	a.setAttribute("className","link");
 	a.setAttribute("href","x:sc");
 	a.style="width:100%;height:100%;position:absolute;right:0px;bottom:0px;";
+	*/
+}
+//关闭添加书签对话框
+function closeAddDialog()
+{
+	var addDialog=document.getElementById("addDialog");
+	addDialog.style="display:none;";
 }
