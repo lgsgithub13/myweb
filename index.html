@@ -8,7 +8,7 @@
   <link href="css/bodyAndBox.css" rel="stylesheet"/>
   <link href="css/addDialog.css" rel="stylesheet"/>
   <script type="text/javascript" src="js/1.js"></script>
-  <script type="text/javascript" src="js/addShuqian.js"></script>
+  <script type="text/javascript" src="js/addUserShuqians.js"></script>
  </head> 
  <body onload="loadUserWeb()"> 
   <div id="bodydiv"> 
@@ -68,6 +68,13 @@
     <p class="text">书签</p> 
    </div> 
    <div class="box" id="add">
+	 <script type="text/JavaScript">
+	   function addShuQian()
+       {  /*添加新标签的onclick*/
+	      var addDialog=document.getElementById("addDialog");
+	      addDialog.style="display:block;";
+       }
+	 </script>
 	<a class="link" onclick="addShuQian()"></a>
 	<p><img class="image" src="image/add.png "/></p>
 	<p class="text">添加新标签</p>
@@ -83,7 +90,15 @@
 	  <p>请输入名称:<input id="inputName"/></p>
 	  <p>请输入图片路径:<input id="inputImgSrc"/></p>
 	</div>
+	<script>
+      function closeAddDialog()
+      {//关闭添加书签对话框
+	    var addDialog=document.getElementById("addDialog");
+	    addDialog.style="display:none;";
+      }
+	</script>
 	<button style="position:absolute;left:70px;bottom:0px;"onclick="closeAddDialog()">取消</button>
+	<script src="js/theOkButtonOfDialog.js"></script>
 	<button style="position:absolute;right:70px;bottom:0px;"onclick="addOk()">确定</button>
   </div>
   
