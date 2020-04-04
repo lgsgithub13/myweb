@@ -55,7 +55,7 @@ function addOk()
 }
 function loadUserWeb()
 {
-if(localStorage.getItem!=null)
+if(localStorage.getItem()!=null&&localStorage.getItem().length>0)
 {
 	//创建标签
 var div=document.createElement("div");
