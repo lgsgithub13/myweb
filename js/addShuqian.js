@@ -44,7 +44,7 @@ function addOk()
 	img.setAttribute("src",srcValue);
 	img.style="width:3em;height:3em;";
 	a.setAttribute("className","link");
-	a.setAttribute("href",inputUrl);
+	a.setAttribute("href",hrefValue);
 	a.style="width:100%;height:100%;position:absolute;right:0px;bottom:0px;";
 	//
 	addDialog.style="display:none;";
