@@ -3,9 +3,7 @@ function loadUserWeb()
 {
     /*if (localStorage.getItem() != null && localStorage.getItem().length > 0) 
     {*/
-		alert("happy");
-		console.log("happy");
-        //创建标签
+		//创建标签
         var div = document.createElement("div");
 
         var bodydiv = document.getElementById("bodydiv");
@@ -24,8 +22,9 @@ function loadUserWeb()
         div.appendChild(p);
         p_include_img.appendChild(img);
 		//通过Key获取webObjStr并把他转为webobj
-		var webObjStr=localStorage.getItem(document.getElementById("inputUrl").value);
+		var webObjStr=localStorage.getItem("webData");
 		var webObj=JSON.parse(webObjStr);
+		alert("获取用户存储的网站信息为:"+"url:"+webObj.url+"名称:"+webObj.linkText+"图片路径:"+webObj.img);
         //为子标签添加属性、样式
         a.setAttribute("className", "link");
         a.setAttribute("href",webObj.url);

@@ -40,11 +40,11 @@ function addOk()
 	var webObj=
 	{
 		url:hrefValue,
-		linktext:linkName,
+		linkText:linkName,
 		img:srcValue,
 	};
 	var webObjStr=JSON.stringify(webObj);
-	window.localStorage.setItem(hrefValue,webObjStr);
+	window.localStorage.setItem("webData",webObjStr);
 	//
 	addDialog.style="display:none;";
 }
