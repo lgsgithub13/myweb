@@ -4,6 +4,11 @@ function loadUserWeb()
 	for(var i=0;i<localStorage.length;i++)
 	{
 		var key=localStorage.key(i);
+		//通过Key获取webObjStr并把他转为webobj
+		var webObjStr=localStorage.getItem(key);
+		var webObj=JSON.parse(webObjStr);
+		if(webObj.url!=null&&webObj.linkText!=null)
+		{
 		//创建标签
         var div = document.createElement("div");
 
@@ -22,10 +27,7 @@ function loadUserWeb()
         div.appendChild(p_include_img);
         div.appendChild(p);
         p_include_img.appendChild(img);
-		//通过Key获取webObjStr并把他转为webobj
-		var webObjStr=localStorage.getItem(key);
-		var webObj=JSON.parse(webObjStr);
-		console.log("所加载用户标签为:"+"    URL:"+webObj.url+"    名称:"+webObj.linkText+"    图片路径:"+webObj.img+"    Key数量为:"+localStorage.length);
+		window.console.log("所加载用户标签为:"+"    URL:"+webObj.url+"    名称:"+webObj.linkText+"    图片路径:"+webObj.img+"    Key数量为:"+localStorage.length);
         //为子标签添加属性、样式
         a.setAttribute("className", "link");
         a.setAttribute("href",webObj.url);
@@ -36,5 +38,6 @@ function loadUserWeb()
         p.innerHTML = webObj.linkText;
         p.setAttribute("className", "text");
         p.style = "font-size:1em;";
+		}
 	}
 }
