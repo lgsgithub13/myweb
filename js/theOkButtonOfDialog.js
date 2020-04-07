@@ -44,7 +44,7 @@ function addOk()
 		img:srcValue,
 	};
 	var webObjStr=JSON.stringify(webObj);
-	window.localStorage.setItem("webData",webObjStr);
+	window.localStorage.setItem(hrefValue,webObjStr);
 	//
 	addDialog.style="display:none;";
 	//
