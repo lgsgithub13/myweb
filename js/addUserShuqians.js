@@ -24,7 +24,7 @@ function loadUserWeb()
 		//通过Key获取webObjStr并把他转为webobj
 		var webObjStr=localStorage.getItem("webData");
 		var webObj=JSON.parse(webObjStr);
-		alert("获取用户存储的网站信息为:"+"url:"+webObj.url+"名称:"+webObj.linkText+"图片路径:"+webObj.img);
+		alert("所加载用户标签为:"+"    URL:"+webObj.url+"    名称:"+webObj.linkText+"    图片路径:"+webObj.img);
         //为子标签添加属性、样式
         a.setAttribute("className", "link");
         a.setAttribute("href",webObj.url);

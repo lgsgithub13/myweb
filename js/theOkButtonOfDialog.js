@@ -47,4 +47,6 @@ function addOk()
 	window.localStorage.setItem("webData",webObjStr);
 	//
 	addDialog.style="display:none;";
+	//
+	alert("已存储用户标签为:"+"    URL:"+hrefValue+"    名称:"+linkName+"    图片路径:"+srcValue);
 }
