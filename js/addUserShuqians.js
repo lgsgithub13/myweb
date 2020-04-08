@@ -14,7 +14,8 @@ function loadUserWeb()
 
         var bodydiv = document.getElementById("bodydiv");
         //把标签添加到body中
-        bodydiv.appendChild(div);
+		var add=document.getElementById("add");
+        bodydiv.insertBefore(div,add);
         //为标签添加属性、样式
         div.setAttribute("className", "box");
         div.style = "position:relative;display:inline-block;margin:0.5em;";

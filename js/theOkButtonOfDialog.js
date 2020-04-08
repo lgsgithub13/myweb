@@ -14,7 +14,8 @@ function addOk()
 	//创建标签并添加到body中
 	var bodydiv=document.getElementById("bodydiv");
 	var newTag=document.createElement("div");
-	bodydiv.appendChild(newTag);
+	var add=document.getElementById("add");
+	bodydiv.insertBefore(newTag,add);
 	newTag.setAttribute("className","box");
 	newTag.style="position:relative;display:inline-block;margin:0.5em;";
 	//创建标签内的子标签
