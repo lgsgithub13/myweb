@@ -9,10 +9,12 @@
   <link href="css/addDialog.css" rel="stylesheet"/>
   <script type="text/javascript" src="js/1.js"></script>
   <script type="text/javascript" src="js/addUserShuqians.js"></script>
+  <script type="text/javaScript" src="js/time.js"></script>
  </head> 
- <body onload="loadUserWeb()"> 
-  <div id="bodydiv"> 
-
+ <body onload="loadUserWeb()">
+  <img src="image/setting.svg" style="display:block;position:fixed;right:0px;margin:10px;top:0px;width:30px;height:30px;"onclick="manage()"/>
+	
+  <div id="bodydiv">
    <p id="clockparagraph">当前时间为:
 	<span style="color:#D8D8D8;">
 	 <span id="H"></span>
@@ -22,7 +24,6 @@
 	 <span id="S"></span>
 	</span>
    </p>
-   <script type="text/javaScript" src="js/time.js"></script>
    
    <div class="search_part">
    <link href="css/searchBox.css" rel="stylesheet"/>
@@ -98,6 +99,6 @@
   </div>
   
   <p style="font-size:16px;">千里之行，始于足下！</p>
-  
+  <script src="js/manage.js"/>
  </body>
 </html>
