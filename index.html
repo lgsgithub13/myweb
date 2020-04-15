@@ -43,26 +43,6 @@
    
    <br /> 
    
-   <div class="box">
-    <a class="link" herf=""></a>
-    <p><img class="image" src="image/xm.JPEG "/></p>
-	<p class="text">#div.a.p(img).p</p>
-   </div>
-   <div class="box"> 
-    <a class="link" href="x:sc"></a> 
-    <p><img class="image" src="image/jb.png" /></p> 
-    <p class="text">脚本</p> 
-   </div> 
-   <div class="box"> 
-    <a class="link" href="x:sd?path=//AppProjects/"></a> 
-    <p><img class="image" src="image/workSpace.png" /></p> 
-    <p class="text">HTML文档</p> 
-   </div> 
-   <div class="box" id="ucdh"> 
-    <a class="link" href="https://go.uc.cn/page/hao/ucmeng2?source="></a> 
-    <p><img class="image" src="image/ucdh.JPEG" /></p> 
-    <p class="text">UC网址导航</p> 
-   </div>  
    <div class="box" id="add">
 	 <script type="text/JavaScript">
 	   function addShuQian()
@@ -104,6 +84,11 @@
    function manage()
    {
      alert("开发中");
+	 var managelist=document.getElementsByClassName("manage");
+	 managelist[0].style="display:block;position:absolute;top:0px;right:0px;width:15px;height:15px;";
+	//
+	var link=document.getElementsByClassName("link");
+	for(var i=0;i<link.length;i++){link[i].style="display:none;";}
    }
  </script>
 </html>

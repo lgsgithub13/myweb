@@ -20,6 +20,14 @@ function loadUserWeb()
         div.setAttribute("className", "box");
         div.style = "position:relative;display:inline-block;margin:0.5em;";
         //在标签内添加a、img、p内容
+		
+		var manageImg=document.createElement("img");
+		//manageImg.setAttribute("style","position");
+		manageImg.setAttribute("src","image/manage.svg");
+		manageImg.setAttribute("class","manage");
+		manageImg.style="display:none;position:absolute;top:0px;right:0px;width:15px;height:15px;";
+		div.appendChild(manageImg);
+	
         var a = document.createElement("a");
         var img = document.createElement("img");
         var p = document.createElement("p");

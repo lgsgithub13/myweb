@@ -23,6 +23,14 @@ function addOk()
 	var img=document.createElement("img");
 	var p=document.createElement("p");
 	var p_include_img=document.createElement("p");
+	
+	var manageImg=document.createElement("img");
+	//manageImg.setAttribute("style","position");
+	manageImg.setAttribute("src","image/manage.svg");
+	manageImg.setAttribute("class","manage");
+	manageImg.style="display:none;position:absolute;top:0px;right:0px;width:15px;height:15px;";
+	newTag.appendChild(manageImg);
+	
 	newTag.appendChild(a);
 	newTag.appendChild(p_include_img);
 	newTag.appendChild(p);
