@@ -85,10 +85,10 @@
    {
      alert("开发中");
 	 var managelist=document.getElementsByClassName("manage");
-	 managelist[0].style="display:block;position:absolute;top:0px;right:0px;width:15px;height:15px;";
-	//
-	var link=document.getElementsByClassName("link");
-	for(var i=0;i<link.length;i++){link[i].style="display:none;";}
+	 for(var ii=0;ii<managelist.length;ii++){ managelist[ii].style="display:block;position:absolute;top:0px;right:0px;width:15px;height:15px;";}
+	 //
+	 var link=document.getElementsByClassName("link");
+	 for(var i=0;i<link.length;i++){link[i].style="display:none;";}
    }
  </script>
 </html>
